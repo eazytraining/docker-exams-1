@@ -1,0 +1,117 @@
+Examen Docker :  QCM
+
+1 - docker est un outil qui permet de faciliter le déploiement des applications : 
+	a - monolithiques
+	b - microservice
+	c - découplée
+	d - dans le cloud
+
+2 - QUe retrouve-on dans une image docker ?
+	a - une application et ses dépendances
+	b - une application
+	c - un systeme d'exploitation
+	d - un container
+	
+3 - Que faut-il pour créer une image docker ?
+	a - un Dockerfile
+	b - un docker-compose
+	c - un interpreteur python
+	d - d'un registre
+	
+4 - Que permet l'instruction FROM dans un Dockerfile ? 
+	a - Copier un fichier dans un nouveau conteneur
+	b - Créer une variable d'environnement
+	c - Créer la nouvelle image à partir de l'image de base indiquée dans le FROM
+	d - définir comment lancer un conteneur de la nouvelle image
+
+5 - Où sont stockées les images après le build ?
+	a - sur un google drive
+	b - sur le cloud aws
+	c - en local sur ma machine dans une base de donnée interne de docker
+	d - sur ma clés usb que j'aurais inséré avant de lancer le processus de build
+	
+6 - Une image docker est l'equivalent d'un systeme d'exploitation Linux !
+	a - vrai
+	b - faux 
+	
+7 - Que font les instructions ADD et COPY dans un dockerfile ?
+	a - définir comment démarrer mon application
+	b - copier des fichiers dans ma nouvelle image buildée 
+	c - créer des variables d'environnement dans mon image nouvellement créé
+	d - définir le maintainer de l'image
+	
+8 - Que font les instructions ENTRYPOINT et CMD dans un dockerfile ? 
+	a - définir comment démarrer l'application buildées 
+	b - définir les port d'ecoute de mon application
+	c - copier des fichiers dans ma nouvelle image buildée
+	d - créer des variables d'environnement dans mon image nouvellement créé
+	
+9 - Etant donne un Dockerfile, pour lancer le build et donner le tag "examen:v1" a la nouvelle image, quelle commande faudrait-il saisir ?
+	a - docker run examen:v1
+	b - docker build -t examen:v1 . 
+	c - docker built examen:v1
+	d - docker exec -it examen:v1 bash
+	
+10 - Que permet de faire docker-compose ?
+	a - créer des fichiers dans mon repertoire de travail
+	b - automatiser le déploiement de mes machines virtuelles dans Virtualbox
+	c - automatiser le déploiement des mes applications dans docker 
+	d - automatiser l'ecriture de mes Dockerfile
+	
+11 - Quelle commande permet de de lancer un déploiement à l'aide de docker-compose ?
+	a - docker-compose up -d 
+	b - docker-compose network ls
+	c - docker-compose down -v 
+	d - docker run -d
+	
+12 - Par défaut si docker ne trouve pas d'image en local, où les télécharge - t - il ? 
+	a - le dockerhub 
+	b - le docker-compose-hub
+	c - dans ma boite mail personnelle que j'aurais synchronisé avec mon compte docker lors de l'installation
+	d -  dans mon repertoire de travail distant sur github
+	
+13 - Quelle commande permet de télécharger l'image httpd:latest sans lancer  de container httpd ?
+	a - docker pull httpd:latest 
+	b - docker run -d httpd:latest
+	c - docker push httpd:latest
+	d - docker poule -d httpd:latest 
+
+14 - Quand je crée un réseau dans docker, si je ne spécifie pas le type de driver, quel type de réseau sera créé ?
+	a - overlay
+	b - bridge 
+	c - etendu
+	d - none
+	
+15 - Quelle option utiliser pour exposer sur la machine hôte le port d'un container déployé sur un réseau bridge ?
+	a - "-p" de la commande docker run 
+	b - "-d" de la commande docker image
+	c - "-e" de la commande docker run
+	d - "-p" de la commande docker create
+	
+16 - Par défaut, tous les containeurs tournent sur quel type de  reseau ?
+	a - host
+	b - macvlan
+	c - NAT
+	d - bridge 
+	
+17 - Quels sont les types de volumes vus en cours docker ? 
+	a - tmpfs et bind
+	b - volumes simples et bind mount 
+	c - bind volume et cache
+	d - tmpsfs et cache
+	
+18 - Quand je supprime une image, les volumes créé  sont aussi supprimé ! 
+	a - vrai
+	b - faux 
+	
+19 - En cas de déploiement d'une base de données mysql, où serait-il judicieux de mettre les données interne du mysql ? 
+	a - un bind mount
+	b - un volume simple 
+	c - un tmpfs
+	d - un stockage réseau NFS
+	
+20 - En cas de déploiement d'un site internet, où serait-il judicieux de mettre les données du site internet (pages web) ?
+	a - un bind mount 
+	b - un volume
+	c - un stockage réseau NFS
+	d - un lien fibre optique pour avoir plus de débit
